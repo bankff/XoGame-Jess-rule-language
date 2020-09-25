@@ -175,7 +175,7 @@
 	(call JOptionPane showMessageDialog ?*frame*
 		?err "Input Mismatch"
 			(get-member JOptionPane ERROR_MESSAGE)))
-;;; �ʴ��Ӷ��� TextArea
+;;; áÊ´§¤Ó¶ÒÁã¹ TextArea
 (deffunction ask-user (?question)
 "Ask a question, and return the answer"
 ;	(bind ?question (str-cat ?question));
@@ -194,7 +194,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;function buuton click;;;
+;;;;function button click;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (deffunction click-button2 (?EVENT)
@@ -375,16 +375,6 @@
 (bind ?handler (new jess.awt.ActionListener click-button9(engine)))
 (?*number9* addActionListener ?handler)
 
-
-;;;======================================================
-;;;   Sticks Program
-;;;
-;;;     This program was introduced in Chapter 9.
-;;;
-;;;     CLIPS Version 6.0 Example
-;;;
-;;;     To execute, merely load, reset and run.
-;;;======================================================
 
 (deffacts initial-phase
    (phase choose-player))
